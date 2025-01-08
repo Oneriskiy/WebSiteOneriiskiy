@@ -1,0 +1,25 @@
+.container {
+margin: 0 auto;
+border: 2px solid black;
+width: 1170px;
+}
+
+.finish {
+margin-left: 175px;
+}
+
+.registration {
+margin-left: 150px;
+}
+
+h1 {
+font-size: 19px;
+display: inline;
+}
+
+p {
+opacity: 65%;
+font-size: 16px;
+margin-left: 100px;
+display: inline;
+}
