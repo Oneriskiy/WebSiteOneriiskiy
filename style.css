@@ -1,25 +1,49 @@
-.container {
-margin: 0 auto;
-border: 2px solid black;
-width: 1170px;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+background-color: rgb(51, 51, 51);
+}
+
+.container {
+height: 50px;
+background-color: rgb(38, 38, 38);
+margin: 0 auto;
+ display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+
+}
+
+
 
 .finish {
 margin-left: 175px;
 }
 
 .registration {
+color: white;
 margin-left: 150px;
 }
 
 h1 {
+color: orange;
 font-size: 19px;
 display: inline;
 }
 
 p {
-opacity: 65%;
+color: white;
+opacity: 0.65;
 font-size: 16px;
 margin-left: 100px;
 display: inline;
+}
+
+hr {
+margin: 0 auto;
+width: 1170px;
+opacity: 0.65;
 }
