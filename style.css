@@ -1,49 +1,120 @@
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-background-color: rgb(51, 51, 51);
+    font-family: Verdana, serif;
+    background-image: url("images/HighTheme.webp");
 }
+
+.snow-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("giffs/snow02.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .container {
-height: 50px;
-background-color: rgb(38, 38, 38);
-margin: 0 auto;
- display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
+    background-image: url("images/Theme.jpg");
+    height: 60px;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
 
+.login {
+    margin-left: 900px;
+    width: 30px;
 }
 
 
-
-.finish {
-margin-left: 175px;
-}
-
-.registration {
-color: white;
-margin-left: 150px;
-}
-
-h1 {
-color: orange;
-font-size: 19px;
-display: inline;
+.lowcontainer {
+    background-color: rgb(240, 240, 240);
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
-color: white;
-opacity: 0.65;
-font-size: 16px;
-margin-left: 100px;
-display: inline;
+    margin-left: 40px;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 5px;
 }
 
-hr {
-margin: 0 auto;
-width: 1170px;
-opacity: 0.65;
+.lowcontainer p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.lowcontainer p:hover::after {
+    width: 100%;
+}
+
+
+.very-low-container {
+    background-color: rgb(240, 240, 240);
+    height: 80px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift {
+    height: 120px;
+    background-image: url("images/Theme.jpg");
+    margin-top: 700px;
+}
+
+.gift-text {
+    opacity: 0.7;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 45px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 30px;
+    color: rgb(100,100,100);
 }
